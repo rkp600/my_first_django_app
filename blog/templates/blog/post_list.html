@@ -1,10 +1,15 @@
+{% load	staticfiles %}
 <html>
      <head>
+           <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+           <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+           <link rel="stylesheet" href="{%static 'css/blog.css'%}">
+           <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
            <title>First git upload</title>
      <head>
      <body>
-          <div>
-              <h1><a href="/">Micro Blog</a><h1>
+          <div class="page-header">
+              <h1 ><a href="/">Micro Blog</a><h1>
           </div>
 
           <div>
@@ -13,7 +18,7 @@
                <p>Everything is theoretically impossible, until it is done.</p>
           </div>
  {% for	post in	posts %}
-         <div>
+         <div class="post">
 	     <p>published:{{post.published_date}}</p>
 	       <h1><a href="">{{post.title}}</a></h1>
 	     <p>{{post.text|linebreaks}}</p>
