@@ -1,0 +1,51 @@
+{% load	staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" type="text/css" href="web1.css">
+    <div id="backgnd">
+    </div>
+</head>
+
+<body> 
+    <div >
+         <h1 ><a href="/">How is Chennai.</a><h1>
+    </div>
+
+
+  <div id="Top_panel">
+                     <p>Puablished: 1.5.2016, 12:14</p>
+                     <h2><a href="">My first post</a></h2>
+                     <p>The society is in my opinion biggest culprit. Men formed the society and brought up women in the mindset that “cover” yourself up completely lest men pass comments on you.</p>
+  <div>
+        <p>Puablished: 1.5.2016, 12:14</p>
+        <h2><a href="">My first post</a></h2>
+        <p>Everything is theoretically impossible, until it is done.</p>
+  </div>
+  </div>
+  <div id="left_nav_panel">
+  </div>
+  <div id="get_hired">
+    </div>
+  <div id="get_hired_box">
+  </div>
+  <div id="hire">
+</div>
+
+{% for	post in	posts %}
+         <div>
+	     <p>published:{{post.published_date}}</p>
+	       <h1><a href="">{{post.title}}</a></h1>
+	     <p>{{post.text|linebreaks}}</p>
+         </div>
+ {% endfor %}
+
+</body>
+
+
+
+</html>

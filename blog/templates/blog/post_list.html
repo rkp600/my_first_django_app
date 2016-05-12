@@ -8,7 +8,7 @@
            <title>First git upload</title>
      <head>
      <body>
-          <div class="page-header">
+          <div >
               <h1 ><a href="/">Micro Blog</a><h1>
           </div>
 
@@ -18,7 +18,7 @@
                <p>Everything is theoretically impossible, until it is done.</p>
           </div>
  {% for	post in	posts %}
-         <div class="post">
+         <div>
 	     <p>published:{{post.published_date}}</p>
 	       <h1><a href="">{{post.title}}</a></h1>
 	     <p>{{post.text|linebreaks}}</p>

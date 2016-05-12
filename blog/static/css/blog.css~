@@ -1,7 +1,10 @@
 h1 a {
-      color:#FCA205;
-      font-family:'Lobster';
+      color:#FCA102;
      }
-body {
-      padding-left:30px;
+body{
+    
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
 }
